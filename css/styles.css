@@ -4,7 +4,7 @@
   --text-secondary-color: #757575;
   --background-primary-color: white;
   --background-secondary-color: #f5f4fa;
-  --background-header-color: #2f303a;
+  --background-header-color: rgba(47, 48, 58, 0.4);
   --title-white: white;
   --title-black: black;
   --border-color: #eeeeee;
@@ -95,6 +95,7 @@
 }
 
 .header {
+  background-image: url("images/header.jpg");
   background-color: var(--background-header-color);
   text-align: center;
   height: 600px;
