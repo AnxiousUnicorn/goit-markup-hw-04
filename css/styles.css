@@ -5,6 +5,8 @@
   --background-primary-color: white;
   --background-secondary-color: #f5f4fa;
   --background-header-color: rgba(47, 48, 58, 0.4);
+  --team-contact-icon-color: #afb1b8;
+  --rect-fill: #f5f4fa;
   --title-white: white;
   --title-black: black;
   --border-color: #eeeeee;
@@ -95,8 +97,8 @@
 }
 
 .header {
-  background-image: url("images/header.jpg");
   background-color: var(--background-header-color);
+  background-image: url("images/header.jpg");
   text-align: center;
   height: 600px;
   color: var(--title-white);
@@ -127,6 +129,20 @@
 .header-button:hover {
   cursor: pointer;
   color: var(--title-black);
+}
+
+.solutions-icons-list {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+rect {
+  fill: var(--rect-fill);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .solutions-box {
@@ -219,6 +235,29 @@
   letter-spacing: 0.03em;
   color: var(--text-secondary-color);
   display: block;
+}
+
+.team-contact-list {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.team-contact-icon {
+  fill: var(--team-contact-icon-color);
+  justify-content: center;
+  align-items: center;
+}
+
+circle {
+  justify-content: center;
+  align-items: center;
+}
+
+circle:hover {
+  background-color: var(--main-color);
+  fill: var(--background-primary-color);
+  cursor: pointer;
 }
 
 .portfolio-buttons {
