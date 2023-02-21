@@ -11,7 +11,7 @@
     />
     <title>Portfolio - WebStudio</title>
   </head>
-  <body class="body container">
+  <body class="body">
     <header class="header-bar container">
       <a class="name" href="index.html">
         <span class="name-first">Web</span>
@@ -23,10 +23,19 @@
         <a class="navigation" href="/kontakt">Kontakt</a>
       </nav>
       <div class="contact-box">
-        <a class="contact" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
+        <a class="contact" href="mailto:info@devstudio.com">
+          <svg class="contact-box-icon" width="16" height="12">
+            <use href="images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+        <a class="contact" href="tel:+48111111111">
+          <svg class="contact-box-icon" width="10" height="16">
+            <use href="images/icons.svg#icon-smartphone"></use>
+          </svg>
+          +48 111 111 111</a
         >
-        <a class="contact" href="tel:+48111111111">+48 111 111 111</a>
+      </div>
     </header>
     <main class="container">
       <ul class="portfolio-buttons section">
@@ -147,24 +156,32 @@
           <span class="footer-joinus-title">Dołącz do nas</span>
           <ul class="footer-joinus-list">
             <li class="footer-joinus-icon">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-instagram"></use>
-              </svg>
+              <circle>
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </circle>
             </li>
             <li class="footer-joinus-icon">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-twitter"></use>
-              </svg>
+              <circle>
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-twitter"></use>
+                </svg>
+              </circle>
             </li>
             <li class="footer-joinus-icon">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-facebook"></use>
-              </svg>
+              <circle>
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </circle>
             </li>
             <li class="footer-joinus-icon">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-linkedin"></use>
-              </svg>
+              <circle>
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </circle>
             </li>
           </ul>
         </div>

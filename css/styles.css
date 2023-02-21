@@ -6,7 +6,7 @@
   --background-secondary-color: #f5f4fa;
   --background-header-color: rgba(47, 48, 58, 0.4);
   --background-footer-color: #2f303a;
-  --team-contact-icon-color: #afb1b8;
+  --icon-color-primary: #afb1b8;
   --rect-fill: #f5f4fa;
   --title-white: white;
   --title-black: black;
@@ -92,16 +92,19 @@
 
 .contact-box-icon {
   margin-right: 10px;
+  fill: var(--text-secondary-color);
+}
+
+.contact-box-icon:hover {
+  fill: var(--main-color);
 }
 
 .contact:hover {
   color: var(--main-color);
-  fill: var(--main-color);
 }
 
 .contact:focus {
   color: var(--main-color);
-  fill: var(--main-color);
 }
 
 .header {
@@ -110,16 +113,7 @@
   color: var(--title-white);
   align-items: center;
   flex-wrap: wrap;
-}
-
-.header.with-bg {
-  background-image: url("images/header.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.header.with-color {
-  background-color: var(--background-header-color);
+  background-image: url("../images/header.jpg");
 }
 
 .header-text {
@@ -140,6 +134,7 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  border-radius: 4px;
 }
 
 .header-button:hover {
@@ -274,18 +269,28 @@ rect {
   width: 206px;
 }
 
-.team-contact-icon {
-  fill: var(--team-contact-icon-color);
-  display: inline-flex;
+.team-contact-icon svg {
+  display: block;
   justify-content: center;
   align-items: center;
+  margin: 12px 12px 12px 12px;
+  fill: var(--icon-color-primary);
 }
 
-.team-contact-icon:hover {
-  fill: var(--background-primary-color);
+.team-contact-icon svg:hover {
+  fill: white;
+}
+
+.team-contact-icon circle {
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+}
+
+.team-contact-icon circle:hover {
   cursor: pointer;
   background-color: var(--main-color);
-  background-size: 44px;
 }
 
 .clients-title {
@@ -306,7 +311,7 @@ rect {
 }
 
 .clients-list-item {
-  border-color: var(--team-contact-icon-color);
+  border-color: var(--icon-color-primary);
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -315,12 +320,18 @@ rect {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  fill: var(--icon-color-primary);
 }
 
 .clients-list-item:hover {
   cursor: pointer;
   fill: var(--main-color);
   border-color: var(--main-color);
+}
+
+.clients-list-item svg:hover {
+  cursor: pointer;
+  fill: var(--main-color);
 }
 
 .portfolio-buttons {
@@ -340,12 +351,15 @@ rect {
   text-align: center;
   letter-spacing: 0.03em;
   height: 38px;
+  border-radius: 4px;
 }
 
 .categories:hover {
   background-color: var(--main-color);
   color: var(--title-white);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .categories:active {
@@ -480,6 +494,19 @@ rect {
   fill: var(--title-white);
 }
 
-.footer-joinus-icon:hover {
+.footer-joinus-icon svg {
+  margin: 12px 12px 12px 12px;
+}
+
+.footer-joinus-icon circle {
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-joinus-icon circle:hover {
   cursor: pointer;
+  background-color: var(--main-color);
 }
